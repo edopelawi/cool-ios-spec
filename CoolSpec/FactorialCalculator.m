@@ -10,4 +10,9 @@
 
 @implementation FactorialCalculator
 
+- (NSNumber *)calculate:(NSNumber *)number
+{
+    return nil;
+}
+
 @end

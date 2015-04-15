@@ -10,4 +10,6 @@
 
 @interface FactorialCalculator : NSObject
 
+- (NSNumber *)calculate:(NSNumber *)number;
+
 @end
