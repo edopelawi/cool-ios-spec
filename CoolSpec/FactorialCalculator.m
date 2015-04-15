@@ -14,18 +14,11 @@
 {
     NSNumber *result = @1;
     
-    if ([number isEqualToNumber:@2]) {
-        result = @2;
-    }
-    else if ([number isEqualToNumber:@3]) {
-        result = @6;
-    }
-    else if ([number isEqualToNumber:@4]) {
-        result = @24;
-    }
-    else if ([number isEqualToNumber:@5]) {
-        result = @120;
-    }
+    NSInteger maxIndex = number.integerValue;
+    
+    for (NSInteger index = 1; index < maxIndex; index++) {
+        result = @((index+1) * result.integerValue);
+    };
     
     return result;
 }
