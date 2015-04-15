@@ -12,7 +12,7 @@
 
 - (NSNumber *)calculate:(NSNumber *)number
 {
-    return nil;
+    return @1;
 }
 
 @end
