@@ -14,11 +14,13 @@
 {
     NSNumber *result = @1;
     
-    NSInteger maxIndex = number.integerValue;
     
-    for (NSInteger index = 1; index < maxIndex; index++) {
-        result = @((index+1) * result.integerValue);
-    };
+    if (number.integerValue > 1) {
+        NSNumber *lowerNumber = @(number.integerValue - 1);
+        NSInteger resultInteger = number.integerValue * [self calculate:lowerNumber].integerValue;
+        
+        result = @(resultInteger);
+    }
     
     return result;
 }
