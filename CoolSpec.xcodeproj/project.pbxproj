@@ -14,6 +14,7 @@
 		8D2742091ADF7F9E007F91BF /* FactorialCalculatorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2742081ADF7F9E007F91BF /* FactorialCalculatorEngine.m */; };
 		8D27420A1ADF7F9E007F91BF /* FactorialCalculatorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2742081ADF7F9E007F91BF /* FactorialCalculatorEngine.m */; };
 		8D27420D1ADF7FBD007F91BF /* FactorialCalculatorEngineSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D27420C1ADF7FBD007F91BF /* FactorialCalculatorEngineSpec.m */; };
+		8D2742121ADF8678007F91BF /* StubCalculatorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2742111ADF8678007F91BF /* StubCalculatorEngine.m */; };
 		8D920DAB1ADE8CD2001F3C30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D920DAA1ADE8CD2001F3C30 /* main.m */; };
 		8D920DAE1ADE8CD2001F3C30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D920DAD1ADE8CD2001F3C30 /* AppDelegate.m */; };
 		8D920DB11ADE8CD2001F3C30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D920DB01ADE8CD2001F3C30 /* ViewController.m */; };
@@ -43,6 +44,8 @@
 		8D2742081ADF7F9E007F91BF /* FactorialCalculatorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactorialCalculatorEngine.m; path = CalculatorEngines/FactorialCalculatorEngine.m; sourceTree = "<group>"; };
 		8D27420C1ADF7FBD007F91BF /* FactorialCalculatorEngineSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactorialCalculatorEngineSpec.m; path = CalculatorEngines/FactorialCalculatorEngineSpec.m; sourceTree = "<group>"; };
 		8D27420E1ADF8141007F91BF /* CalculatorLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculatorLogger.h; path = CalculatorLoggers/CalculatorLogger.h; sourceTree = "<group>"; };
+		8D2742101ADF8678007F91BF /* StubCalculatorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StubCalculatorEngine.h; path = Stubs/StubCalculatorEngine.h; sourceTree = "<group>"; };
+		8D2742111ADF8678007F91BF /* StubCalculatorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StubCalculatorEngine.m; path = Stubs/StubCalculatorEngine.m; sourceTree = "<group>"; };
 		8D2960871ADEC4100009966C /* TestPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPrefixHeader.pch; sourceTree = "<group>"; };
 		8D920DA51ADE8CD2001F3C30 /* CoolSpec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolSpec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D920DA91ADE8CD2001F3C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -130,6 +133,15 @@
 			name = CalculatorEngines;
 			sourceTree = "<group>";
 		};
+		8D27420F1ADF860E007F91BF /* Stubs */ = {
+			isa = PBXGroup;
+			children = (
+				8D2742101ADF8678007F91BF /* StubCalculatorEngine.h */,
+				8D2742111ADF8678007F91BF /* StubCalculatorEngine.m */,
+			);
+			name = Stubs;
+			sourceTree = "<group>";
+		};
 		8D920D9C1ADE8CD2001F3C30 = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +202,7 @@
 		8D920DC21ADE8CD2001F3C30 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8D27420F1ADF860E007F91BF /* Stubs */,
 				8D920DC31ADE8CD2001F3C30 /* Info.plist */,
 				8D2960871ADEC4100009966C /* TestPrefixHeader.pch */,
 			);
@@ -351,6 +364,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D2742121ADF8678007F91BF /* StubCalculatorEngine.m in Sources */,
 				8D27420A1ADF7F9E007F91BF /* FactorialCalculatorEngine.m in Sources */,
 				8D2742031ADF7E64007F91BF /* FactorialCalculatorSpec.m in Sources */,
 				8D27420D1ADF7FBD007F91BF /* FactorialCalculatorEngineSpec.m in Sources */,
