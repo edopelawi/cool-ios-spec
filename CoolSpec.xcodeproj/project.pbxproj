@@ -8,9 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		8CF5FBA6C61D004356F01497 /* libPods-CoolSpecTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D7040E414CC731CC9683494D /* libPods-CoolSpecTests.a */; };
-		8D29608A1ADEC4A10009966C /* FactorialCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2960891ADEC4A10009966C /* FactorialCalculator.m */; };
-		8D29608B1ADEC4A10009966C /* FactorialCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2960891ADEC4A10009966C /* FactorialCalculator.m */; };
-		8D29608D1ADEC4D50009966C /* FactorialCalculatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D29608C1ADEC4D50009966C /* FactorialCalculatorSpec.m */; };
+		8D2741FF1ADF7DEC007F91BF /* FactorialCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2741FE1ADF7DEC007F91BF /* FactorialCalculator.m */; };
+		8D2742001ADF7DEC007F91BF /* FactorialCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2741FE1ADF7DEC007F91BF /* FactorialCalculator.m */; };
+		8D2742031ADF7E64007F91BF /* FactorialCalculatorSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2742021ADF7E64007F91BF /* FactorialCalculatorSpec.m */; };
+		8D2742091ADF7F9E007F91BF /* FactorialCalculatorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2742081ADF7F9E007F91BF /* FactorialCalculatorEngine.m */; };
+		8D27420A1ADF7F9E007F91BF /* FactorialCalculatorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D2742081ADF7F9E007F91BF /* FactorialCalculatorEngine.m */; };
+		8D27420D1ADF7FBD007F91BF /* FactorialCalculatorEngineSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D27420C1ADF7FBD007F91BF /* FactorialCalculatorEngineSpec.m */; };
 		8D920DAB1ADE8CD2001F3C30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D920DAA1ADE8CD2001F3C30 /* main.m */; };
 		8D920DAE1ADE8CD2001F3C30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D920DAD1ADE8CD2001F3C30 /* AppDelegate.m */; };
 		8D920DB11ADE8CD2001F3C30 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D920DB01ADE8CD2001F3C30 /* ViewController.m */; };
@@ -32,10 +35,15 @@
 /* Begin PBXFileReference section */
 		1B0AC9130047D4412F01C0F8 /* Pods-CoolSpecTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolSpecTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoolSpecTests/Pods-CoolSpecTests.release.xcconfig"; sourceTree = "<group>"; };
 		5D4E7B68B090DCD9A4DC492E /* Pods-CoolSpecTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoolSpecTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoolSpecTests/Pods-CoolSpecTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8D2741FD1ADF7DEC007F91BF /* FactorialCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FactorialCalculator.h; path = Calculators/FactorialCalculator.h; sourceTree = "<group>"; };
+		8D2741FE1ADF7DEC007F91BF /* FactorialCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactorialCalculator.m; path = Calculators/FactorialCalculator.m; sourceTree = "<group>"; };
+		8D2742021ADF7E64007F91BF /* FactorialCalculatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactorialCalculatorSpec.m; path = Calculators/FactorialCalculatorSpec.m; sourceTree = "<group>"; };
+		8D2742051ADF7ED1007F91BF /* CalculatorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculatorEngine.h; path = Protocols/CalculatorEngine.h; sourceTree = "<group>"; };
+		8D2742071ADF7F9E007F91BF /* FactorialCalculatorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FactorialCalculatorEngine.h; path = CalculatorEngines/FactorialCalculatorEngine.h; sourceTree = "<group>"; };
+		8D2742081ADF7F9E007F91BF /* FactorialCalculatorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactorialCalculatorEngine.m; path = CalculatorEngines/FactorialCalculatorEngine.m; sourceTree = "<group>"; };
+		8D27420C1ADF7FBD007F91BF /* FactorialCalculatorEngineSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactorialCalculatorEngineSpec.m; path = CalculatorEngines/FactorialCalculatorEngineSpec.m; sourceTree = "<group>"; };
+		8D27420E1ADF8141007F91BF /* CalculatorLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculatorLogger.h; path = CalculatorLoggers/CalculatorLogger.h; sourceTree = "<group>"; };
 		8D2960871ADEC4100009966C /* TestPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPrefixHeader.pch; sourceTree = "<group>"; };
-		8D2960881ADEC4A10009966C /* FactorialCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FactorialCalculator.h; sourceTree = "<group>"; };
-		8D2960891ADEC4A10009966C /* FactorialCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactorialCalculator.m; sourceTree = "<group>"; };
-		8D29608C1ADEC4D50009966C /* FactorialCalculatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FactorialCalculatorSpec.m; sourceTree = "<group>"; };
 		8D920DA51ADE8CD2001F3C30 /* CoolSpec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolSpec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D920DA91ADE8CD2001F3C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D920DAA1ADE8CD2001F3C30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -79,6 +87,49 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8D2741FC1ADF7DDB007F91BF /* Calculators */ = {
+			isa = PBXGroup;
+			children = (
+				8D2741FD1ADF7DEC007F91BF /* FactorialCalculator.h */,
+				8D2741FE1ADF7DEC007F91BF /* FactorialCalculator.m */,
+			);
+			name = Calculators;
+			sourceTree = "<group>";
+		};
+		8D2742011ADF7E1E007F91BF /* Calculators */ = {
+			isa = PBXGroup;
+			children = (
+				8D2742021ADF7E64007F91BF /* FactorialCalculatorSpec.m */,
+			);
+			name = Calculators;
+			sourceTree = "<group>";
+		};
+		8D2742041ADF7EB5007F91BF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8D2742051ADF7ED1007F91BF /* CalculatorEngine.h */,
+				8D27420E1ADF8141007F91BF /* CalculatorLogger.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		8D2742061ADF7F60007F91BF /* CalculatorEngines */ = {
+			isa = PBXGroup;
+			children = (
+				8D2742071ADF7F9E007F91BF /* FactorialCalculatorEngine.h */,
+				8D2742081ADF7F9E007F91BF /* FactorialCalculatorEngine.m */,
+			);
+			name = CalculatorEngines;
+			sourceTree = "<group>";
+		};
+		8D27420B1ADF7FA5007F91BF /* CalculatorEngines */ = {
+			isa = PBXGroup;
+			children = (
+				8D27420C1ADF7FBD007F91BF /* FactorialCalculatorEngineSpec.m */,
+			);
+			name = CalculatorEngines;
+			sourceTree = "<group>";
+		};
 		8D920D9C1ADE8CD2001F3C30 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +153,9 @@
 		8D920DA71ADE8CD2001F3C30 /* CoolSpec */ = {
 			isa = PBXGroup;
 			children = (
+				8D2742061ADF7F60007F91BF /* CalculatorEngines */,
+				8D2741FC1ADF7DDB007F91BF /* Calculators */,
+				8D2742041ADF7EB5007F91BF /* Protocols */,
 				8D920DAC1ADE8CD2001F3C30 /* AppDelegate.h */,
 				8D920DAD1ADE8CD2001F3C30 /* AppDelegate.m */,
 				8D920DAF1ADE8CD2001F3C30 /* ViewController.h */,
@@ -110,8 +164,6 @@
 				8D920DB51ADE8CD2001F3C30 /* Images.xcassets */,
 				8D920DB71ADE8CD2001F3C30 /* LaunchScreen.xib */,
 				8D920DA81ADE8CD2001F3C30 /* Supporting Files */,
-				8D2960881ADEC4A10009966C /* FactorialCalculator.h */,
-				8D2960891ADEC4A10009966C /* FactorialCalculator.m */,
 			);
 			path = CoolSpec;
 			sourceTree = "<group>";
@@ -128,8 +180,9 @@
 		8D920DC11ADE8CD2001F3C30 /* CoolSpecTests */ = {
 			isa = PBXGroup;
 			children = (
+				8D27420B1ADF7FA5007F91BF /* CalculatorEngines */,
+				8D2742011ADF7E1E007F91BF /* Calculators */,
 				8D920DC21ADE8CD2001F3C30 /* Supporting Files */,
-				8D29608C1ADEC4D50009966C /* FactorialCalculatorSpec.m */,
 			);
 			path = CoolSpecTests;
 			sourceTree = "<group>";
@@ -289,7 +342,8 @@
 				8D920DB11ADE8CD2001F3C30 /* ViewController.m in Sources */,
 				8D920DAE1ADE8CD2001F3C30 /* AppDelegate.m in Sources */,
 				8D920DAB1ADE8CD2001F3C30 /* main.m in Sources */,
-				8D29608A1ADEC4A10009966C /* FactorialCalculator.m in Sources */,
+				8D2742091ADF7F9E007F91BF /* FactorialCalculatorEngine.m in Sources */,
+				8D2741FF1ADF7DEC007F91BF /* FactorialCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,8 +351,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D29608D1ADEC4D50009966C /* FactorialCalculatorSpec.m in Sources */,
-				8D29608B1ADEC4A10009966C /* FactorialCalculator.m in Sources */,
+				8D27420A1ADF7F9E007F91BF /* FactorialCalculatorEngine.m in Sources */,
+				8D2742031ADF7E64007F91BF /* FactorialCalculatorSpec.m in Sources */,
+				8D27420D1ADF7FBD007F91BF /* FactorialCalculatorEngineSpec.m in Sources */,
+				8D2742001ADF7DEC007F91BF /* FactorialCalculator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
