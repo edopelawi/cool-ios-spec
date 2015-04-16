@@ -42,6 +42,7 @@
 		8D2742071ADF7F9E007F91BF /* FactorialCalculatorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FactorialCalculatorEngine.h; path = CalculatorEngines/FactorialCalculatorEngine.h; sourceTree = "<group>"; };
 		8D2742081ADF7F9E007F91BF /* FactorialCalculatorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactorialCalculatorEngine.m; path = CalculatorEngines/FactorialCalculatorEngine.m; sourceTree = "<group>"; };
 		8D27420C1ADF7FBD007F91BF /* FactorialCalculatorEngineSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactorialCalculatorEngineSpec.m; path = CalculatorEngines/FactorialCalculatorEngineSpec.m; sourceTree = "<group>"; };
+		8D27420E1ADF8141007F91BF /* CalculatorLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculatorLogger.h; path = CalculatorLoggers/CalculatorLogger.h; sourceTree = "<group>"; };
 		8D2960871ADEC4100009966C /* TestPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPrefixHeader.pch; sourceTree = "<group>"; };
 		8D920DA51ADE8CD2001F3C30 /* CoolSpec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolSpec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D920DA91ADE8CD2001F3C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -107,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				8D2742051ADF7ED1007F91BF /* CalculatorEngine.h */,
+				8D27420E1ADF8141007F91BF /* CalculatorLogger.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
