@@ -8,8 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+#import "CalculatorEngine.h"
+#import "CalculatorLogger.h"
+
 @interface FactorialCalculator : NSObject
 
-- (NSNumber *)calculate:(NSNumber *)number;
+- (instancetype)initWithEngine:(id<CalculatorEngine>)engine
+                        logger:(id<CalculatorLogger>)logger;
+
+- (void)calculateAndLogNumber:(NSNumber *)number;
 
 @end

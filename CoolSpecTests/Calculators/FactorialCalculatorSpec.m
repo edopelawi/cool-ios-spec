@@ -7,44 +7,47 @@
 //
 
 #import "FactorialCalculator.h"
+#import "StubCalculatorEngine.h"
+#import "FakeCalculatorLogger.h"
 
 SpecBegin(FactorialCalculator)
 
 __block FactorialCalculator *calculator;
+__block StubCalculatorEngine *calculatorEngine;
+__block FakeCalculatorLogger *calculatorLogger;
 
 beforeEach(^{
-    calculator = [FactorialCalculator new];
+    calculatorEngine = [StubCalculatorEngine new];
+    calculatorLogger = OCMPartialMock([FakeCalculatorLogger new]);
+    
+    calculator = [[FactorialCalculator alloc] initWithEngine:calculatorEngine
+                                                      logger:calculatorLogger];
 });
 
-describe(@"calculate:", ^{
+describe(@"calculateAndLogNumber: method", ^{
+    __block NSNumber *number = @777;
     
-    it(@"should return 1 for 0", ^{
-        expect([calculator calculate:@0]).to.equal(@1);
+    __block NSNumber *passedNumber;
+    
+    beforeEach(^{
+        OCMStub([calculatorLogger logNumber:[OCMArg any]])
+        .andDo(^(NSInvocation *invocation){
+            [invocation retainArguments];
+            [invocation getArgument:&passedNumber atIndex:2];
+        });
+        
+        [calculator calculateAndLogNumber:number];
     });
     
-    it(@"should return 1 for 1", ^{
-        expect([calculator calculate:@1]).to.equal(@1);
+    it(@"should pass parameter to engine", ^{
+        expect(calculatorEngine.latestPassedNumber).to.equal(number);
     });
     
-    it(@"should return 2 for 2", ^{
-        expect([calculator calculate:@2]).to.equal(@2);
+    it(@"should call logger's logNumber method", ^{
+        NSNumber *result = calculatorEngine.staticResult;
+        OCMVerify([calculatorLogger logNumber:result]);
     });
-    
-    it(@"should return 6 for 3", ^{
-        expect([calculator calculate:@3]).to.equal(@6);
-    });
-    
-    it(@"should return 24 for 4", ^{
-        expect([calculator calculate:@4]).to.equal(@24);
-    });
-    
-    it(@"should return 120 for 5", ^{
-        expect([calculator calculate:@5]).to.equal(@120);
-    });
-    
-    it(@"should return 3,628,800 for 10", ^{
-        expect([calculator calculate:@10]).to.equal(@3628800);
-    });
+
 });
 
 SpecEnd
