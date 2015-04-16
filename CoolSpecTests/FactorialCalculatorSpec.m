@@ -42,6 +42,9 @@ describe(@"calculate:", ^{
         expect([calculator calculate:@5]).to.equal(@120);
     });
     
+    it(@"should return 3,628,800 for 10", ^{
+        expect([calculator calculate:@10]).to.equal(@3628800);
+    });
 });
 
 SpecEnd
