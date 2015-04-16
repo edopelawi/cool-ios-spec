@@ -9,10 +9,13 @@
 #import <Foundation/Foundation.h>
 #import "CalculatorEngine.h"
 
+
 @interface StubCalculatorEngine : NSObject <CalculatorEngine>
 
 @property (nonatomic, strong) NSNumber *latestPassedNumber;
 
 - (NSNumber *)calculate:(NSNumber *)number;
+
+- (NSNumber *)staticResult;
 
 @end

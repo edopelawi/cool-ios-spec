@@ -13,6 +13,11 @@
 - (NSNumber *)calculate:(NSNumber *)number
 {
     self.latestPassedNumber = number;
+    return [self staticResult];
+}
+
+- (NSNumber *)staticResult
+{
     return @123;
 }
 
