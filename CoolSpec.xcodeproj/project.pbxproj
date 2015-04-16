@@ -35,6 +35,7 @@
 		8D2741FD1ADF7DEC007F91BF /* FactorialCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FactorialCalculator.h; path = Calculators/FactorialCalculator.h; sourceTree = "<group>"; };
 		8D2741FE1ADF7DEC007F91BF /* FactorialCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactorialCalculator.m; path = Calculators/FactorialCalculator.m; sourceTree = "<group>"; };
 		8D2742021ADF7E64007F91BF /* FactorialCalculatorSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FactorialCalculatorSpec.m; path = Calculators/FactorialCalculatorSpec.m; sourceTree = "<group>"; };
+		8D2742051ADF7ED1007F91BF /* CalculatorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CalculatorEngine.h; path = Protocols/CalculatorEngine.h; sourceTree = "<group>"; };
 		8D2960871ADEC4100009966C /* TestPrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPrefixHeader.pch; sourceTree = "<group>"; };
 		8D920DA51ADE8CD2001F3C30 /* CoolSpec.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoolSpec.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D920DA91ADE8CD2001F3C30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -96,6 +97,14 @@
 			name = Calculators;
 			sourceTree = "<group>";
 		};
+		8D2742041ADF7EB5007F91BF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				8D2742051ADF7ED1007F91BF /* CalculatorEngine.h */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
 		8D920D9C1ADE8CD2001F3C30 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				8D2741FC1ADF7DDB007F91BF /* Calculators */,
+				8D2742041ADF7EB5007F91BF /* Protocols */,
 				8D920DAC1ADE8CD2001F3C30 /* AppDelegate.h */,
 				8D920DAD1ADE8CD2001F3C30 /* AppDelegate.m */,
 				8D920DAF1ADE8CD2001F3C30 /* ViewController.h */,
