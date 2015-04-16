@@ -8,21 +8,32 @@
 
 #import "FactorialCalculator.h"
 
+@interface FactorialCalculator ()
+
+@property (nonatomic, strong) id<CalculatorEngine>engine;
+@property (nonatomic, strong) id<CalculatorLogger>logger;
+
+@end
+
 @implementation FactorialCalculator
 
-- (NSNumber *)calculate:(NSNumber *)number
+- (instancetype)initWithEngine:(id<CalculatorEngine>)engine
+                        logger:(id<CalculatorLogger>)logger;
 {
-    NSNumber *result = @1;
+    self = [super init];
     
-    
-    if (number.integerValue > 1) {
-        NSNumber *lowerNumber = @(number.integerValue - 1);
-        NSInteger resultInteger = number.integerValue * [self calculate:lowerNumber].integerValue;
-        
-        result = @(resultInteger);
+    if (self) {
+        self.engine = engine;
+        self.logger = logger;
     }
     
-    return result;
+    return self;
+}
+
+- (void)calculateAndLogNumber:(NSNumber *)number
+{
+    NSNumber *result = [self.engine calculate:number];
+    [self.logger logNumber:result];
 }
 
 @end
